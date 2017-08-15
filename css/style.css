@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900');
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script');
+
+/* This
+is
+a comment */
+
+/* CSS Syntax
+
+selector {
+  property: value;
+  property: value;
+}
+
+*/
+
+/* Type selector */
+
+p { /* select all <p> */
+  font-size: 1em; /*16px (will always be 16 px), ?pt (will vary browser to browser), 100% (relative to element & parents), 1 em (size of 1 "m", usually 16px, but may vary with different fonts) */
+  line-height: 1.5em;
+}
+
+figcaption {
+  /*font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-family: Georgia, "New Times Roman", serif; /*if they don't have 1st font, it moves to the next one.  New Times Roman has quotes because name of font has spaces */
+  font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive; /* this encompasses what we did in the previous lines */
+  color: #777;
+  text-align: right;
+}
+
+/* Class selector (applied to as many elements as you like) */
+
+.milk-text { /*select elements with class attribute="milk-text" */
+  font: bold 2.6em 'Elsie Swash Caps', cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000; /*horizontal offset, vertical offset, blur radius, color */
+}
+
+/* ID selector (applied to 1 unique element per page) */
+
+#logo { /*select elements with id="logo" */
+  background: aqua;
+}
+
+/* Descendant Selector (select all descendants within a parent) */
+
+#logo h1 { /* style h1 elements if they are inside element with id="logo" */
+  font-family: 'Clicker Script', cursive
+}
+
+#logo h2 {
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Psuedo Selector (selects elements based on their states, like a link state) */
+
+#details a:link, #details a:visited { /* uses descendant selector and then psuedo selector; also combining similar elements using a comma */
+  color: black;
+  text-decoration: none;
+}
+
+#details a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color: red;
+}
